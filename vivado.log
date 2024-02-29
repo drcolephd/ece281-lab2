@@ -1,0 +1,481 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 28 21:11:51 2024
+# Process ID: 30004
+# Current directory: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25672 C:\Users\C27Brandon.Sweitzer\code\ece281-lab2\src\hdl\binaryHexDisplay\binaryHexDisplay.xpr
+# Log file: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/vivado.log
+# Journal file: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sources_1/new/binaryToHex.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sources_1/new/binaryToHex.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 772.883 ; gain = 55.566
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: error on x0
+Time: 40 ns  Iteration: 0  Process: /sevenSegDecoder_tb/test_process  File: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd
+$finish called at time : 40 ns : File "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" Line 101
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 823.797 ; gain = 16.785
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: error on x0
+Time: 80 ns  Iteration: 0  Process: /sevenSegDecoder_tb/test_process  File: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd
+$finish called at time : 80 ns : File "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" Line 109
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: error on x0
+Time: 120 ns  Iteration: 0  Process: /sevenSegDecoder_tb/test_process  File: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd
+$finish called at time : 120 ns : File "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" Line 119
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 844.961 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 160 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: error on x0
+Time: 80 ns  Iteration: 0  Process: /sevenSegDecoder_tb/test_process  File: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd
+$finish called at time : 80 ns : File "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" Line 109
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_bp {C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sources_1/new/sevenSegDecoder.vhd} 74
+remove_bps -file {C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sources_1/new/sevenSegDecoder.vhd} -line 74
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sources_1/new/sevenSegDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim/xsim.dir/sevenSegDecoder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 28 22:21:20 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: error on x0
+Time: 80 ns  Iteration: 0  Process: /sevenSegDecoder_tb/test_process  File: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd
+$finish called at time : 80 ns : File "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" Line 109
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 893.555 ; gain = 0.457
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sources_1/new/sevenSegDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: error on x0
+Time: 130 ns  Iteration: 0  Process: /sevenSegDecoder_tb/test_process  File: C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd
+$finish called at time : 130 ns : File "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/lab2_template_tb.vhd" Line 119
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sevenSegDecoder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sevenSegDecoder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.srcs/sources_1/new/sevenSegDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 02fc6c084ea04dafbd00fe260bf1d502 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sevenSegDecoder_tb_behav xil_defaultlib.sevenSegDecoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sevenSegDecoder [sevensegdecoder_default]
+Compiling architecture test_bench of entity xil_defaultlib.sevensegdecoder_tb
+Built simulation snapshot sevenSegDecoder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Brandon.Sweitzer/code/ece281-lab2/src/hdl/binaryHexDisplay/binaryHexDisplay.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sevenSegDecoder_tb_behav -key {Behavioral:sim_1:Functional:sevenSegDecoder_tb} -tclbatch {sevenSegDecoder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sevenSegDecoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sevenSegDecoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 904.023 ; gain = 3.656
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 28 22:44:35 2024...
